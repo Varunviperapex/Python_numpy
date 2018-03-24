@@ -6,17 +6,18 @@ Created on Sat 24-03-2018
 @Team : 404-Not Found
 """
 import numpy as np
-import numpy.ma as ma
 
-arry = list()
+arry = []
 number = int(input("Enter the number of elements you want:"))
 if(number<3):
     print ('Enter more than 3 numbers: ')
 else:
-    print ('Enter numbers in array: ')
+    #print ('Enter numbers in array: ')
+    elements = (input("Enter the elements you want:"))
+    k=elements.split()
+    print(k)
     for i in range(int(number)):
-        n = input("number :")
-        arry.append(int(n))
+        arry.append(int(k[i]))
 
     print ('ORIGINAL ARRAY: ',arry)
     y = np.array([arry])
