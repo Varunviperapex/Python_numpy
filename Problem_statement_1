@@ -12,7 +12,6 @@ number = int(input("Enter the number of elements you want:"))
 if(number<3):
     print ('Enter more than 3 numbers: ')
 else:
-    #print ('Enter numbers in array: ')
     elements = (input("Enter the elements you want:"))
     k=elements.split()
     print(k)
